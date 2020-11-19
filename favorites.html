@@ -3,16 +3,11 @@
     <head>
         <title>Favorites</title>
         <style>
-            li a:hover:not(.active){
+            li a:hover{
                 background-color: #66fcf1;
                 color: black;
-            }
-            .active {
-                background-color: #66fcf1;
-                color: black;
-
-            }
-            li a {
+            }   
+            .link {
                 display: block;
                 color:#66fcf1;
                 text-align: center;
@@ -22,7 +17,7 @@
                 font-weight: bold;
                 margin: 5px; 
             }
-            ul {
+            .ulNavBar {
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -30,7 +25,7 @@
                 background-color: #203647;
                 border-bottom: 2px solid whitesmoke;
             }
-            li {
+            .liNavBar {
                 float: left;
             }
             body {
@@ -41,24 +36,88 @@
                 font-family: Century Gothic;
                 text-align: center;
             }
-            img {
-                border: 1px solid #66fcf1;
+            h2 {
+                color: #66fcf1;
+                font-family: Century Gothic;
             }
-
+            .ulHobby {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #66fcf1;
+                float: none;
+                list-style-type: square;
+                font-size: 20px;
+            }
+            .liFavorites {
+                color:#c5c6c7;
+                font-weight: bold;
+            }
+            ol {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #66fcf1;
+                font-size: 20px;
+            }
+            td, th {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #66fcf1;
+                font-size: 20px;
+            }
+            #link {
+                text-decoration: none;
+                color: #c5c6c7;
+            }
             
         </style>
     </head>
     <body>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="education.html">My Education</a></li>
-            <li><a href="imagegallery.html">Image Gallery</a></li>
-            <li><a href="favorites.html">Favorites</a></li>
+        <ul class="ulNavBar">
+            <li class="liNavBar"><a class="link" href="index.html">Home</a></li>
+            <li class="liNavBar"><a class="link" href="aboutme.html">About Me</a></li>
+            <li class="liNavBar"><a class="link" href="education.html">My Education</a></li>
+            <li class="liNavBar"><a class="link" href="imagegallery.html">Image Gallery</a></li>
+            <li class="liNavBar"><a class="link" href="favorites.html">Favorites</a></li>
+            <li class="liNavBar"><a class="link" href="contacts.html">Contacts</a></li>
         </ul>
         <h1>Favorites</h1>
-        
-
+        <h2>Hobbies</h2>
+        <ul class="ulHobby">
+            <li class="liFavorites">Playing Basketball.<img src="ball.ico" style="height: 25px; width: 25px;" ></li>
+            <li class="liFavorites">Playing Video Games especially RTS.</li>
+            <li class="liFavorites">Watching Documentaries about History or the Universe.</li>
+            <li class="liFavorites">Listening to Music.<img src="music.png" style="height: 25px;width: 25px;"></li>
+        </ul>
+        <h2>Favorite Foods</h2>
+        <ul class="ulHobby">
+            <li class="liFavorites">Humba</li>
+            <li class="liFavorites">Tortang Talong</li>
+            <li class="liFavorites">Pizza</li>
+            <li class="liFavorites">Spaghetti</li>
+        </ul>
+        <h2>Favorite Movie/TV Series</h2>
+        <ol type="a">
+            <li class="liFavorites">Interstellar</li>
+            <li class="liFavorites">Breaking Bad</li>
+            <li class="liFavorites">Avatar</li>
+            <li class="liFavorites">Joker(2019)</li>
+        </ol>
+        <table>
+            <tr>
+                <td>a.</td>
+                <td><img src="interstellar.jpg" style="height: 350px; width: 250px;"></td>
+                <td>b.</td>
+                <td><img src="breakingbad.jpg" style="height: 350px; width: 250px;"></td>
+                <td>c.</td>
+                <td><img src="avatar.jpg" style="height: 350px; width: 250px;"></td>
+                <td>d.</td>
+                <td><img src="joker.jpg" style="height: 350px; width: 250px;"></td>
+            </tr>
+        </table>
+        <h2>Favorite Social Medias</h2>
+        <ol type="A">
+            <li class="liFavorites"><a id="link" href="https://www.facebook.com/dcnacario" alt="This is my profile picture">Facebook</li>
+            <li class="liFavorites"><a id="link" href="https://www.youtube.com/channel/UCPbUKYrEIkJltTx0tM8tQEQ?view_as=subscriber">Youtube</a></li>
+            <li class="liFavorites"><a id="link" href="https://twitter.com/cty08?lang=en">Twitter</a></li>
+            <li class="liFavorites"><a id="link" href="https://www.instagram.com/dcnacario/">Instagram</a></li>
+        </ol>
                
 
 
